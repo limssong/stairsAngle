@@ -7,7 +7,7 @@ function App() {
   // }
 
   const getAngleFromTan = (result) => {
-    return Math.atan(result) * 180 / Math.PI
+    return (Math.atan(result) * 180 / Math.PI).toFixed(2)
   }
 
   const [inputs,setInputs] = useState({
