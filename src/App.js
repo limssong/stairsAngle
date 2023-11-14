@@ -2,14 +2,6 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  // const getTanFromDegrees = (degrees) => {
-  //   return Math.tan((degrees * Math.PI) / 180).toFixed(3);
-  // }
-
-  const getAngleFromTan = (result) => {
-    return (Math.atan(result) * 180 / Math.PI).toFixed(2)
-  }
-
   const [inputs,setInputs] = useState({
     base : '',
     height : ''
@@ -24,7 +16,24 @@ function App() {
       [name] : value  // name키를 가진 값을 value로 설정
     })
   }
-  let result = base / height
+
+  // const getTanFromDegrees = (degrees) => {
+  //   return Math.tan((degrees * Math.PI) / 180).toFixed(3);
+  // }
+
+  const getAngleFromTan = (result) => {
+    return (Math.atan(result) * 180 / Math.PI).toFixed(2)
+  }
+
+
+  let result = Number(base) / Number(height)
+  let angle
+  if (result === false || isNaN(result) !== false) {
+    angle = "값을 정확하게 입력하세요."
+  }
+  else {
+    angle = getAngleFromTan(result) + "°"
+  }
 
   return (
     <div className="App">
@@ -40,7 +49,7 @@ function App() {
         {/* <p>밑변 / 높이 : {result}</p> */}
         {/* <p>{result} = tan X</p> */}
       </ul>
-      <h2>A = {getAngleFromTan(result) === true ? getAngleFromTan(result)+"°" : "값을 정확하게 입력하세요"}</h2>
+      <h2>A = {angle}</h2>
     </div>
   )
 }

@@ -6,6 +6,7 @@ html {
   min-width:320px;
   max-width:768px;
   margin: 0 auto;
+  padding: 2rem 1rem;
   font-size: 1rem;
   text-align: center;
 }
