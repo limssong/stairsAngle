@@ -41,8 +41,8 @@ function App() {
       <h2>밑변 길이(a)와 높이(b)값으로<br />밑변(a)과 빗변(c) 사이의<br />끼인각(A) 구하기</h2>
       <img src="https://limssong.github.io/images/stairsAngle/triangle.png" alt="삼각형 이미지" />
       <ul>
-        <li><input type="number" placeholder="밑변 길이(a) 입력" onChange={onChange} name="base" value={base} /></li>
-        <li><input type="number" placeholder="높이(b) 입력" onChange={onChange} name="height" value={height} /></li>
+        <li><input type="tel" placeholder="밑변 길이(a) 입력" onChange={onChange} name="base" value={base} /></li>
+        <li><input type="tel" placeholder="높이(b) 입력" onChange={onChange} name="height" value={height} /></li>
       </ul>
       <ul>
         <li>입력하신 밑변(a) 길이 : {base}</li>
