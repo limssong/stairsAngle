@@ -26,7 +26,7 @@ function App() {
   }
 
 
-  let result = Number(base) / Number(height)
+  let result = Number(height) / Number(base) 
   let angle
   if (result === false || isNaN(result) !== false) {
     angle = "값을 정확하게 입력하세요."
