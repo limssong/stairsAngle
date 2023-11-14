@@ -1,5 +1,37 @@
+html {
+  font-size: 3.13vmin;
+}
+* { margin:0; padding:0; list-style:none; }
 .App {
+  min-width:320px;
+  font-size: 1rem;
   text-align: center;
+}
+.App img {
+  display:block;
+  width:80%;
+  margin:0 auto;
+}
+.App ul {
+  display:flex;
+  width:90%;
+  margin: 1rem auto 0;
+}
+.App ul li {
+  width:45%;
+  margin: 0 auto;
+  font-size:1rem;
+}
+
+.App ul li input {
+  width:90%;
+  margin: 0 auto;
+  padding:0.5rem 1rem;
+  font-size:1.2rem;
+}
+
+.App h2 {
+  margin-top:1rem;
 }
 
 .App-logo {

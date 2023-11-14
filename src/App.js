@@ -28,18 +28,19 @@ function App() {
 
   return (
     <div className="App">
-      <h1>밑변(a)과 빗변(c) 사이의 끼인각(A) 구하기</h1>
-      <p><img src="https://limssong.github.io/images/stairsAngle/triangle.png" alt="삼각형 이미지" /></p>      
-      <input type="text" placeholder="밑변 길이(a) 입력" onChange={onChange} name="base" value={base} />
-      <input type="text" placeholder="높이 길이(b) 입력" onChange={onChange} name="height" value={height} />
-      <div>
-        <p>입력하신 밑변(a) 길이 : {base}</p>
-        <p>입력하신 높이(b) 길이 : {height}</p>
+      <h1>밑변(a)과 빗변(c) 사이의<br />끼인각(A) 구하기</h1>
+      <img src="https://limssong.github.io/images/stairsAngle/triangle.png" alt="삼각형 이미지" />
+      <ul>
+        <li><input type="text" placeholder="밑변 길이(a) 입력" onChange={onChange} name="base" value={base} /></li>
+        <li><input type="text" placeholder="높이 길이(b) 입력" onChange={onChange} name="height" value={height} /></li>
+      </ul>
+      <ul>
+        <li>입력하신 밑변(a) 길이 : {base}</li>
+        <li>입력하신 높이(b) 길이 : {height}</li>
         {/* <p>밑변 / 높이 : {result}</p> */}
         {/* <p>{result} = tan X</p> */}
-        <p>밑변(a)과 빗변(c)의 끼인각 A = {getAngleFromTan(result) ? getAngleFromTan(result)+"°" : "값을 정확하게 입력하세요"}</p>
-
-      </div>
+      </ul>
+      <h2>A = {getAngleFromTan(result) === true ? getAngleFromTan(result)+"°" : "값을 정확하게 입력하세요"}</h2>
     </div>
   )
 }
