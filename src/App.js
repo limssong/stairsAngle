@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <h1>밑변(a)과 빗변(c) 사이의 끼인각(A) 구하기</h1>
-      <p><img src="https://limssong.github.io/stairsAngle/src/images/triangle.png" alt="삼각형 이미지" /></p>      
+      <p><img src="https://limssong.github.io/images/stairsAngle/triangle.png" alt="삼각형 이미지" /></p>      
       <input type="text" placeholder="밑변 길이(a) 입력" onChange={onChange} name="base" value={base} />
       <input type="text" placeholder="높이 길이(b) 입력" onChange={onChange} name="height" value={height} />
       <div>
